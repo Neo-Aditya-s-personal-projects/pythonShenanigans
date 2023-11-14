@@ -1,8 +1,9 @@
+import random
+import math
+
 def start():
   game()
 def game():
-  import random
-  import math
   lower = int(input("Enter Lower bound:- "))
   upper = int(input("Enter Upper bound:- "))
   x = random.randint(lower, upper)
@@ -26,4 +27,5 @@ def game():
       if x.lower() ==  "y":
         start()
       if x.lower() ==  "n":
-        quit() 
+        quit()
+start()
